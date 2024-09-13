@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paso a Paso de Actividades</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #a1d0ff; 
+        }
+
+        h1 {
+            color: #0d2e51; 
+            margin-bottom: 20px;
+        }
+
+        .card {
+            border: none; 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            margin-bottom: 20px; 
+        }
+
+        .card-title {
+            color: #343a40; 
+        }
+
+        .card-text {
+            color: #495057;
+        }
+
+        .container {
+            max-width: 900px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Paso a Paso de Actividades</h1>
+        
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Paso 1: Verificar version de Git</h5>
+                        <p class="card-text">
+                            Con el codigo "git -v" podemos ver la version actual de git con la que se esta trabajando.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Paso 2: Configurar Git</h5>
+                        <p class="card-text">
+                            Con el codigo "git config --global -e" se abrira el editor de texto en donde se podran configurar el
+                            nombre, email y username.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Paso 3: Inicializar el Repositorio</h5>
+                        <p class="card-text">
+                            Con el codigo "git init" se inicializa el repositorio en el cual se esta trabajando,
+                            es importante utilizar el codigo "git branch -m nonbre" para crear una nueva rama dentro del repositorio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Paso 4: Probar el repositorio</h5>
+                        <p class="card-text">
+                            Para efectos de prueba se crea por ejemplo un archivo Readme dentro de la carpeta, posteriormente se usa "git add .", luego
+                            con el codigo "git status" se verifica que el repositorio correctamente esta activo y el archivo Readme puede ser subido, 
+                            en caso de que quiera subirse solo cierto tipo de archivos el "git add *.tipo de archivo".
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Paso 5: Realizar Commit</h5>
+                        <p class="card-text">
+                            Con el codigo "git commit -m "mensaje"" se suben los archivos en stage con el "add ." al repositorio de manera correcta junto con un mensaje, 
+                            con "git commit --amend" se corrige el mensaje del ultimo commit realizado, en caso de que quiera cambiarse.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Paso 6: Restablecer archivos</h5>
+                        <p class="card-text">
+                            En caso de que se borre o perdamos algun archivo, con "git checkout ." restablecemos los archivos que estaban subidos hasta el anterior
+                            repositorio de git.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Paso 7: Ver diferencias</h5>
+                        <p class="card-text">
+                            Con el codigo "git diff" podemos ver las diferencias entre una anterior version del repositorio y la actual.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Paso 8: Configurar alias </h5>
+                        <p class="card-text">
+                            Con el codigo "git config --global alias.l "log --online" configuramos el alias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
